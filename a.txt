@@ -1,0 +1,18 @@
+准备工作:
+		1.注册github,并且简历仓库;
+		2.生成本地密钥,作为本地和GitHub的标识;
+			ssh-keygen -t rsa -C 'email@123.com' 注册的邮箱;一路回车就OK了;用.pub的那个就可以.
+		3.添加密钥到GitHub中;
+		4.配置一下我是谁:
+			git config -l:查看当前配置;
+			git config --global user.email 'email@123.com'
+			git config --global user.name 'username'
+
+	git[分布式]:
+		1.在本地建立一个文件夹,进入到文件夹中右键,git bash here;
+		2.git init 初始化本地目录,把本地目录变成仓库;
+		3.git status: 查看当前仓库状态
+		4.Git add FileName: 添加文件文件到缓存区;
+		5.git commit -m 'add message': 添加提交备注;
+		6.Git remote add origin https://github.com/nocodenolife/···
+		7.git push -u origin master 
